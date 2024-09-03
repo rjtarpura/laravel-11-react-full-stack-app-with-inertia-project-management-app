@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# [About Project](https://www.youtube.com/watch?v=VrQRa-afCAk&t=416s)
+
+Laravel 11 + React Full Stack App with Inertia - Project Management App
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -64,3 +68,38 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Important commands to setup this project
+
+- nvm use 22.6.0 (Previous Version: 14.21)
+- [composer create-project laravel/laravel laravel11-react-inertia](https://laravel.com/docs/11.x/)
+- [composer require laravel/breeze --dev](https://laravel.com/docs/11.x/starter-kits)
+- php artisan breeze:install
+- npm install @heroicons/react]
+    - https://heroicons.com
+    - https://github.com/tailwindlabs/heroicons?tab=readme-ov-file
+    - https://unpkg.com/browse/@heroicons/react@2.1.5/24/outline
+- php artisan make:model Task -fm
+- php artisan migrate:refresh --seed
+- php artisan make:controller TaskController --model=Task --requests --resource
+- php artisan make:resource ProjectResource
+- php artisan storage:link
+
+### Further Reading
+
+- laravel/breeze
+- laravel/sail
+- nesbot/carbon
+- laravel/tinker
+- nunomaduro/collision
+- nunomaduro/termwind
+- inertiajs/inertia-laravel
+- laravel/sanctum
+- tightenco/ziggy
+- TypeScript
+- Pest
+- PHPUnit
+
+<pre>
+    {JSON.stringify(projects, undefined, 2)}
+</pre>
